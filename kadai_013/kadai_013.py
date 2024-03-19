@@ -1,6 +1,6 @@
 def calculate(price, tax): # taxは%で入力
     total = price + (price * tax * 0.01)
-    print(total)
+    return total
 
-# 1000円の買い物
-calculate(1000, 10)
+# 1000円の商品
+print(f"{calculate(1000, 10)}円")
