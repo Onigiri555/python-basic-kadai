@@ -1,0 +1,26 @@
+class Human:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+    
+    def check_adult(self):
+        if self.age >= 20:
+            print(f"{self.name}は大人です。")
+        else:
+            print(f"{self.name}は大人ではありません。")
+
+humans_list = []
+humans_name_list = []
+
+humans_dictionary = {"Alex": 24,"Bob": 22,"Chris": 15}
+for key, value in humans_dictionary.items():
+    key = Human(key, value)
+    humans_list.append(key)
+
+humans_name_list = humans_dictionary.keys()
+
+def check_adult(human_list, human_list2):
+    for i in range (len(human_list)):
+        humans_list[i].check_adult()
+
+check_adult(humans_name_list, humans_list)
